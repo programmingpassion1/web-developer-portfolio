@@ -214,7 +214,7 @@ textarea {
     display: none;
 }
 @media screen and (max-width: 576px) {
-    .skill-container {
+    .skill-container, .resume-container {
         flex-direction: column;
     } 
     #what-i-do-description{

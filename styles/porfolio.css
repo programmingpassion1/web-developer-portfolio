@@ -83,7 +83,7 @@ nav a {
     margin-top: 0px;
 }
 
-.banner.profile-picture {
+.banner .profile-pic {
     width: 500px;
 }
 
@@ -214,20 +214,32 @@ textarea {
     display: none;
 }
 @media screen and (max-width: 576px) {
-    .skill-container, .resume-container, footer{
+    nav, .banner, nav>ul, .skill-container, .resume-container, footer, .about-info-container{
         flex-direction: column;
     } 
-    #what-i-do-description{
+    nav > ul{
+        gap: 10px;
+    }
+    .header{
+        background-image: none;
+    }
+    .banner .profile-pic{
+        width: 100%;
+    }
+    .btn-primary{
+        margin-bottom: 10px;
+    }
+    .banner, #what-i-do-description{
         padding: 20px;
     } 
-    footer{
+    footer, .about{
         padding: 20px;
     } 
     .footer-column{
         width:100%;
     } 
     .contact input[type="text"], .contact input[type="email"],
-textarea {
+    textarea {
         width: 70%;
 }
 }
